@@ -48,12 +48,14 @@ export function TaskList() {
         <h2>Minhas tasks</h2>
 
         <div className="input-group">
+          
           <input 
             type="text" 
             placeholder="Adicionar novo todo" 
             onChange={(e) => setNewTaskTitle(e.target.value)}
             value={newTaskTitle}
           />
+          
           <button type="submit" data-testid="add-task-button" onClick={handleCreateNewTask}>
             <FiCheckSquare size={16} color="#fff"/>
           </button>
